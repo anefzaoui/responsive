@@ -1,4 +1,4 @@
 responsive
 ==========
 
-HTML5 Design resposive structures (with examples).
+HTML5 Design: responsive structures (with examples).
