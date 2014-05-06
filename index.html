@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Responsive</title>
+    <style>
+    html,body{
+      margin: 0;
+      padding: 0;
+      font-size: 12px;
+      background-color: #E7EBF2;
+      font-family:'lucida grande',tahoma,verdana,arial,sans-serif;
+    }
+    
+    a{
+      color: #F0532E;
+      text-decoration: none;
+    }
+    
+    a:hover{
+      text-decoration: underline;
+    }
+
+    #main{
+      float: right;
+      background-color: #E7EBF2;
+      width: calc(100% - 200px);
+      height: 600px;
+    }
+
+    #main div{
+      margin: 10px;
+      color: rgb(45,45,45);
+    }
+    
+    #main div p{
+      font-size: 15px;
+    }
+
+    #sidebar{
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #F0532E;
+      width: 200px;
+      height: 600px;
+      color: white;
+    }
+    
+    #sidebar div{
+      margin: 10px;
+    }
+    
+    #sidebar a{
+      color: white;
+      text-decoration: none;
+      font-size:15px;
+      display: block;
+    }
+    
+    #sidebar a:hover{
+      text-decoration: underline;
+    }
+
+    @media (max-width: 320px){
+      #main{
+        clear: both;
+        width: 100%;
+        margin-top:70px;
+      }
+
+      #sidebar{
+        clear: botth;
+        width: 100%;
+        height: 70px;
+        position: fixed;
+        top: 0;
+      }
+      
+      #sidebar h1{
+        font-size:16px;
+      }
+      
+      #sidebar a{
+            display: inline-block;
+            font-size: 13px;
+            margin: 0 3px;
+      }
+    }
+
+    </style>
+
+  </head>
+  <body>
+    <div id="main">
+      <div>
+        <h1>What is responsive?</h1>
+        <h2>Responsive, is making a webpage, web site compatible with different types of screens, resolutions and devices.</h2>
+        <p>
+          PC resolution is always large (for example 1024x768). While Mobile is always small (for example 320x480).
+          <br/>
+          <a target="_blank" href="http://www.smashingmagazine.com/2011/01/12/guidelines-for-responsive-web-design/">English article link</a>
+        </p>
+        
+        <h1>How to do it?</h1>
+        <h2>1) Using CSS3</h2>
+        <p>
+          <b>Like this:</b>
+          <br/>
+          <pre>
+          <code>
+        @media (max-width: 320px){
+          #main{
+            clear: both;
+            width: 100%;
+            margin-top:70px;
+          }
+
+          #sidebar{
+            clear: botth;
+            width: 100%;
+            height: 70px;
+            position: absolute;
+            top: 0;
+          }
+          
+        }
+          </code>
+          </pre>
+        <b>Everything here will be applied only when the width of a webpage is less or equal ( &#8804; ) 320px.</b>
+        </p>
+        <br/>
+        <p>
+        <h2>Examples of responsive websites design:</h2>
+        </p>
+        
+      </div>
+    </div>
+    <div id="sidebar">
+      <div>
+        <h1>Links here</h1>
+        <a href=#">Link example 1.0</a>
+        <a href="#">Example 2</a>
+        <a href="#">Example 3</a>
+      </div>
+    </div>
+  </body>
+</html>
