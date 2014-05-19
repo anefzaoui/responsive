@@ -18,6 +18,7 @@ html,body{
   margin: 20px auto;
   border:0px solid black;
   display:block;
+  position: relative;
 }
 
 #rub1{
@@ -39,8 +40,16 @@ html,body{
 
 #rub1 #description{
   font-size: 19px;
-  margin-left: 350px;
+  margin-left: 450px;
   padding-top: 10px;
+  width: 400px;
+}
+
+#rub1 #logo{
+  position: absolute;
+  top:50px;
+  left:10px;
+  
 }
 
 #container{
@@ -102,6 +111,7 @@ html,body{
 <body>
   <div id="wrapper">
     <div id="rub1">
+      <img src="logo1-320x102.png" id="logo"/>
       <p id="titre">YAS Consulting</p>
       <p id="description">Est une entreprise informatique indépendante dont les activités tournent autour de trois grands axes</p>
       </div>
