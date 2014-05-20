@@ -12,7 +12,6 @@ html,body{
 #wrapper-inside{
   width: 100%;
   margin: 0 auto 0 auto;
-  border:0px solid black;
   display:block;
   position: relative;
   padding: 20px 0;
@@ -20,6 +19,7 @@ html,body{
 
 .header-wrapper{
   background-color:#F5F7F8;
+  border-bottom: 1px solid rgba(78,78,77,0.1);
 }
 
 #header{
