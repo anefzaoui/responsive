@@ -134,7 +134,7 @@ html,body{
 
 #rubv{
   width: 290px;
-  min-height:430px;
+  min-height:460px;
   display:inline-block;
   vertical-align:top;
   padding: 10px 0;
@@ -155,6 +155,7 @@ html,body{
 #rubv p{
   margin: 15px;
   font-size:17px;
+  line-height: 21px;
   text-align: left;
 }
 
